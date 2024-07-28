@@ -1,4 +1,4 @@
-﻿namespace Framework.core.ReferencePool
+﻿namespace KC
 {
     /// <summary>
     /// 引用接口

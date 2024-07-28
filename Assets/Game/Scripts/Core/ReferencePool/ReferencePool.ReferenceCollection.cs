@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Framework.core.ReferencePool
+namespace KC
 {
 public static partial class ReferencePool
     {

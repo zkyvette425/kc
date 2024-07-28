@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Framework.core.ReferencePool
+namespace KC
 {
 /// <summary>
     /// 引用池。

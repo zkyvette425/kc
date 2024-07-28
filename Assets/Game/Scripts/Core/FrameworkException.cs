@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
-namespace Framework.core
+namespace KC
 {
     /// <summary>
     /// 框架异常类
