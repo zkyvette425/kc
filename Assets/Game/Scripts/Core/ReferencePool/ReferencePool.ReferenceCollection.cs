@@ -86,7 +86,7 @@ public static partial class ReferencePool
             {
                 if (typeof(T) != m_ReferenceType)
                 {
-                    throw new FrameworkException("Type is invalid.");
+                    throw new CoreException("Type is invalid.");
                 }
 
                 m_UsingReferenceCount++;
@@ -126,7 +126,7 @@ public static partial class ReferencePool
                 {
                     if (m_EnableStrictCheck && m_References.Contains(reference))
                     {
-                        throw new FrameworkException("The reference has been released.");
+                        throw new CoreException("The reference has been released.");
                     }
 
                     m_References.Enqueue(reference);
@@ -140,7 +140,7 @@ public static partial class ReferencePool
             {
                 if (typeof(T) != m_ReferenceType)
                 {
-                    throw new FrameworkException("Type is invalid.");
+                    throw new CoreException("Type is invalid.");
                 }
 
                 lock (m_References)

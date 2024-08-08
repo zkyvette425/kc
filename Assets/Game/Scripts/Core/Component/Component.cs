@@ -20,19 +20,19 @@ namespace KC
             {
                 if (value == null)
                 {
-                    throw new FrameworkException($"{GetType().FullName} 设置父组件失败,原因:父组件为空");
+                    throw new CoreException($"{GetType().FullName} 设置父组件失败,原因:父组件为空");
                 }
                 
                 if (value == this)
                 {
-                    throw new FrameworkException($"{GetType().FullName} 设置父组件失败,原因:无法将自己设置为父组件");
+                    throw new CoreException($"{GetType().FullName} 设置父组件失败,原因:无法将自己设置为父组件");
                 }
 
                 if (_parent != null)
                 {
                     if (_parent == value)
                     {
-                        throw new FrameworkException($"{GetType().FullName} 设置父组件失败,原因:重复设置");
+                        throw new CoreException($"{GetType().FullName} 设置父组件失败,原因:重复设置");
                     }
                     _parent._children.Remove(Id);
                 }

@@ -96,7 +96,7 @@ namespace KC
         {
             if (reference == null)
             {
-                throw new FrameworkException("Reference is invalid.");
+                throw new CoreException("Reference is invalid.");
             }
 
             Type referenceType = reference.GetType();
@@ -165,7 +165,7 @@ namespace KC
         {
             if (referenceType == null)
             {
-                throw new FrameworkException("ReferenceType is invalid.");
+                throw new CoreException("ReferenceType is invalid.");
             }
 
             ReferenceCollection referenceCollection = null;
